@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> 
+
+</head>
+<body>
+    
+    <nav class="d-flex justify-content-between p-3 bg-body-secondary">
+
+        <div class="d-flex gap-1 align-items-center">
+            <img height="20px" width="20px" src="./insta.png" alt="insta">
+            <h4 class="m-0">Instagram</h4>
+        </div>
+
+        <div >
+
+            <button type="button" class="btn bg-success text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create a new post
+              </button>
+              
+            
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <label for=""><strong>Caption:</strong></label>
+                            <textarea class="form-control mt-2" 
+                            cols="30"
+                            rows="2"
+                            placeholder="Add the caption of your post here" 
+                            style="width: 100%;" 
+                            name="" id=""></textarea>
+
+                            <div class="mt-3 mb-3">
+                                <button type="button" class="btn btn-light border"><img width="20px" height="20px" src="./camara.png" alt="camara"></button>
+                                <button type="button" class="btn btn-light border"><img width="20px" height="20px" src="./ubicacion.png" alt="ubicacion"></button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary bg-success">Publish</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                     
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img height="20px" width="20px" src="tuerca.png" alt="">
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li><a class="dropdown-item border-top text-danger" href="#">Log out</a></li>
+
+              </ul>
+
+        
+        </div>
+
+    </nav>
+
+    <nav>
+        <div class="nav nav-tabs d-flex justify-content-center p-2" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="bi bi-border-all" ></i></button>
+          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="bi bi-square-fill "></i></button>
+         
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+
+            <div class="row m-1">
+                <div class="col-4 m-0 p-2">
+                    <img src="./weimi.jpg" alt="weimi" class="img-fluid">
+                </div>
+
+                <div class="col-4 m-0 p-2">
+                    <img src="./cafe.jpg" alt="cafe" class="img-fluid">
+                </div>
+                <div class="col-4 m-0 p-2">
+                    <img src="./budapest.jpg" alt="budapest" class="img-fluid">
+                </div>
+                <div class="col-4 m-0 p-2">
+                    <img src="./journal.jpg" alt="journal" class="img-fluid">
+                </div>
+                <div class="col-4 m-0 p-2">
+                    <img src="./libro.jpg" alt="libro" class="img-fluid">
+                </div>
+                <div class="col-4 m-0 p-2">
+                    <img src="./desk.jpg" alt="desk" class="img-fluid">
+                </div>
+
+                <div class="col-4 m-0 p-2">
+                    <img src="./maleta.jpg" alt="maleta" class="img-fluid">
+                </div>
+
+                <div class="col-4 m-0 p-2">
+                    <img src="./mapa.jpg" alt="mapa" class="img-fluid">
+                </div>
+
+                <div class="col-4 m-0 p-2">
+                    <img src="./yoga.jpg" alt="yoga" class="img-fluid">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="tab-pane fade p-5 m-auto" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0" style="max-width: 40%;">
+
+       
+            <div class="card mb-3" style="max-width: 500px;">
+            <div class="card-header bg-transparent d-flex justify-content-between">
+              <h2>Mi Weimi</h2>
+              <p>26/06</p>
+            </div>
+            <div class="card-body p-0">
+              
+              <img class="img-fluid" src="./weimi2.jpg" alt="">
+  
+            </div>
+            <div class="card-footer bg-transparent">
+              <p> <strong>10.323 likes</strong>  </p>
+              <p>No importa lo malo que haya sido tu día, si tienes un perro, siempre te recibirá una cara feliz al llegar a casa. El mundo sería un lugar mejor, si todos tuvieran la capacidad de amar incondicionalmente como un perro.</p>
+            </div>
+          </div>
+  
+          <div class="card mb-3" style="max-width: 500px;">
+            <div class="card-header bg-transparent d-flex justify-content-between">
+              <h2>La majestuosa Budapest</h2>
+              <p>27/08</p>
+            </div>
+            <div class="card-body p-0">
+              
+              <img class="img-fluid" src="./budapest2.jpg" alt="">
+  
+            </div>
+            <div class="card-footer bg-transparent">
+              <p> <strong>9.857 likes</strong>  </p>
+              <p>Hungría es una de las joyas de Europa, especialmente su hermosa capital, Budapest. La fotografía no le hace justicia al majestuoso Parlamento Nacional, situado a orillas del río Danubio. Sin lugar a dudas, Budapest es una ciudad llena de historia y belleza.</p>
+            </div>
+          </div>
+  
+          <div class="card mb-3" style="max-width: 500px;">
+            <div class="card-header bg-transparent d-flex justify-content-between">
+              <h2>Cozy Desk</h2>
+              <p>08/09</p>
+            </div>
+            <div class="card-body p-0">
+              
+              <img class="img-fluid" src="./desk2.jpg" alt="">
+  
+            </div>
+            <div class="card-footer bg-transparent">
+              <p> <strong>8.605 likes</strong>  </p>
+              <p>Tener un espacio acogedor para trabajar y estudiar es muy importante, ya que paso la mayoría del tiempo aquí. "Nuestra mayor debilidad reside en rendirnos. La forma más segura de tener éxito es intentarlo una vez más." Así que sin miedo al éxito, ¡a programar!  </p>
+            </div>
+          </div>
+  
+        </div>
+      
+      </div>
+  
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
